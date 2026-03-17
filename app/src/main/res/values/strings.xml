@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Student Info</string>
+    <string name="first_name_hint">Wpisz imię</string>
+    <string name="last_name_hint">Wpisz nazwisko</string>
+    <string name="grades_count_hint">5-15</string>
+    <string name="button_grades">Oceny</string>
+    <string name="error_empty">Pole nie może być puste!</string>
+    <string name="error_invalid_count">Wymagane od 5 do 15 ocen!</string>
+    <string name="label_first_name">Imię</string>
+    <string name="label_last_name">Nazwisko</string>
+    <string name="label_grades_count">Liczba ocen</string>
+</resources>
