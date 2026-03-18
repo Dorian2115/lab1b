@@ -2,9 +2,9 @@ package com.example.lab1b;
 
 public class Grade {
     private String name;
-    private int grade;
+    private Double grade;
 
-    public Grade(String name, int grade) {
+    public Grade(String name, Double grade) {
         this.name = name;
         this.grade = grade;
     }
@@ -13,11 +13,11 @@ public class Grade {
         return name;
     }
 
-    public int getGrade() {
+    public Double getGrade() {
         return grade;
     }
 
-    public void setGrade(int grade1){
+    public void setGrade(Double grade1){
         this.grade = grade1;
 
     }

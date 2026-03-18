@@ -33,22 +33,20 @@ public class GradesAdapter extends RecyclerView.Adapter<GradesAdapter.GradeViewH
         Grade currentGrade = mGradeList.get(position);
         holder.binding.subjectNameTextView.setText(currentGrade.getName());
         holder.binding.gradesRadioGroup.setOnCheckedChangeListener(null);
-        switch (currentGrade.getGrade()) {
-            case 2:
-                holder.binding.gradesRadioGroup.check(R.id.grade2RadioButton);
-                break;
-            case 3:
-                holder.binding.gradesRadioGroup.check(R.id.grade3RadioButton);
-                break;
-            case 4:
-                holder.binding.gradesRadioGroup.check(R.id.grade4RadioButton);
-                break;
-            case 5:
-                holder.binding.gradesRadioGroup.check(R.id.grade5RadioButton);
-                break;
-            default:
-                holder.binding.gradesRadioGroup.clearCheck();
-                break;
+        if (currentGrade.getGrade() == 2) {
+            holder.binding.gradesRadioGroup.check(R.id.grade2RadioButton);
+        } else if (currentGrade.getGrade() == 3) {
+            holder.binding.gradesRadioGroup.check(R.id.grade3RadioButton);
+        } else if (currentGrade.getGrade() == 3.5) {
+            holder.binding.gradesRadioGroup.check(R.id.grade3_5RadioButton);
+        } else if (currentGrade.getGrade() == 4) {
+            holder.binding.gradesRadioGroup.check(R.id.grade4RadioButton);
+        } else if (currentGrade.getGrade() == 4.5) {
+            holder.binding.gradesRadioGroup.check(R.id.grade4_5RadioButton);
+        } else if (currentGrade.getGrade() == 5) {
+            holder.binding.gradesRadioGroup.check(R.id.grade5RadioButton);
+        } else {
+            holder.binding.gradesRadioGroup.clearCheck();
         }
         holder.binding.gradesRadioGroup.setOnCheckedChangeListener(holder);
     }
@@ -72,15 +70,19 @@ public class GradesAdapter extends RecyclerView.Adapter<GradesAdapter.GradeViewH
         public void onCheckedChanged(RadioGroup group, int checkedId) {
             int position = getAdapterPosition();
             if (position != RecyclerView.NO_POSITION) {
-                int newGrade = 2;
+                Double newGrade = 2.0;
                 if (checkedId == R.id.grade2RadioButton) {
-                    newGrade = 2;
+                    newGrade = 2.0;
                 } else if (checkedId == R.id.grade3RadioButton) {
-                    newGrade = 3;
+                    newGrade = 3.0;
                 } else if (checkedId == R.id.grade4RadioButton) {
-                    newGrade = 4;
+                    newGrade = 3.5;
                 } else if (checkedId == R.id.grade5RadioButton) {
-                    newGrade = 5;
+                    newGrade = 4.0;
+                } else if (checkedId == R.id.grade5RadioButton) {
+                    newGrade = 4.5;
+                } else if (checkedId == R.id.grade5RadioButton) {
+                    newGrade = 5.0;
                 }
                 mGradeList.get(position).setGrade(newGrade);
             }

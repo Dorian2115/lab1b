@@ -33,10 +33,22 @@
             android:text="3"/>
 
         <RadioButton
+            android:id="@+id/grade3_5RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.5"/>
+
+        <RadioButton
             android:id="@+id/grade4RadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="4"/>
+
+        <RadioButton
+            android:id="@+id/grade4_5RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.5"/>
 
         <RadioButton
             android:id="@+id/grade5RadioButton"

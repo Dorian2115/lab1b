@@ -35,7 +35,7 @@ public class GradesActivity extends AppCompatActivity{
         mgradeList = new ArrayList<>();
         for (int i = 0; i < gradesCount; i++) {
             String subjectName = (i < classNames.length) ? classNames[i] : "Przedmiot " + (i + 1);
-            mgradeList.add(new Grade((subjectName), 2));
+            mgradeList.add(new Grade((subjectName), 2.0));
         }
 
         GradesAdapter adapter = new GradesAdapter(this, mgradeList);
