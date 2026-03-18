@@ -9,4 +9,24 @@
     <string name="label_first_name">Imię</string>
     <string name="label_last_name">Nazwisko</string>
     <string name="label_grades_count">Liczba ocen</string>
+    <string name="grades">Oceny</string>
+    <string name="calculate_average">Oblicz średnią</string>
+
+    <string-array name="course_names">
+        <item>Matematyka</item>
+        <item>Fizyka</item>
+        <item>Programowanie</item>
+        <item>Algorytmy</item>
+        <item>Bazy danych</item>
+        <item>Sieci komputerowe</item>
+        <item>Grafika komputerowa</item>
+        <item>Systemy operacyjne</item>
+        <item>Inżynieria oprogramowania</item>
+        <item>Sztuczna inteligencja</item>
+        <item>Architektura komputerów</item>
+        <item>Języki formalne</item>
+        <item>Kryptografia</item>
+        <item>Aplikacje mobilne</item>
+        <item>Zarządzanie projektami</item>
+    </string-array>
 </resources>

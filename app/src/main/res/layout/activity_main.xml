@@ -100,5 +100,38 @@
         app:layout_constraintTop_toBottomOf="@id/editGradesCount"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+    
+    <TextView
+        android:id="@+id/textAverage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/buttonGrades"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSuper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/button_super"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/textAverage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonFailed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/button_failed"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/textAverage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

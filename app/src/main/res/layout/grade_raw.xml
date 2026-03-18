@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/subjectNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Przedmiot"
+        android:textSize="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/gradesRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/grade2RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"/>
+
+        <RadioButton
+            android:id="@+id/grade3RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"/>
+
+        <RadioButton
+            android:id="@+id/grade4RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"/>
+
+        <RadioButton
+            android:id="@+id/grade5RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"/>
+
+    </RadioGroup>
+
+
+</LinearLayout>
