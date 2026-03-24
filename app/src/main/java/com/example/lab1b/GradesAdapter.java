@@ -70,20 +70,22 @@ public class GradesAdapter extends RecyclerView.Adapter<GradesAdapter.GradeViewH
         public void onCheckedChanged(RadioGroup group, int checkedId) {
             int position = getAdapterPosition();
             if (position != RecyclerView.NO_POSITION) {
-                Double newGrade = 2.0;
+                double newGrade = 2.0;
+
                 if (checkedId == R.id.grade2RadioButton) {
                     newGrade = 2.0;
                 } else if (checkedId == R.id.grade3RadioButton) {
                     newGrade = 3.0;
-                } else if (checkedId == R.id.grade4RadioButton) {
+                } else if (checkedId == R.id.grade3_5RadioButton) {
                     newGrade = 3.5;
-                } else if (checkedId == R.id.grade5RadioButton) {
+                } else if (checkedId == R.id.grade4RadioButton) {
                     newGrade = 4.0;
-                } else if (checkedId == R.id.grade5RadioButton) {
+                } else if (checkedId == R.id.grade4_5RadioButton) {
                     newGrade = 4.5;
                 } else if (checkedId == R.id.grade5RadioButton) {
                     newGrade = 5.0;
                 }
+
                 mGradeList.get(position).setGrade(newGrade);
             }
         }

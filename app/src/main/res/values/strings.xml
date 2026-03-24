@@ -11,6 +11,8 @@
     <string name="label_grades_count">Liczba ocen</string>
     <string name="grades">Oceny</string>
     <string name="calculate_average">Oblicz średnią</string>
+    <string name="button_super">Zdajesz</string>
+    <string name="button_failed">Nie zdajesz</string>
 
     <string-array name="course_names">
         <item>Matematyka</item>
